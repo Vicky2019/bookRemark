@@ -3,8 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueJsonp from 'vue-jsonp'
+import VueSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+import echarts from 'echarts'
 
+Vue.prototype.$echarts = echarts
+require('echarts-wordcloud')
+Vue.use(VueSwiper)
 Vue.config.productionTip = false
+Vue.use(VueJsonp)
 
 /* eslint-disable no-new */
 new Vue({
